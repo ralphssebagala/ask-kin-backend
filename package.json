@@ -1,0 +1,36 @@
+{
+  "name": "ask-kin-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "ngrok": "^4.3.3",
+    "oracledb": "^7.0.1",
+    "smile-identity-core": "^3.2.1",
+    "stripe": "^22.6.1"
+  },
+  "allowScripts": {
+    "oracledb@7.0.1": true,
+    "ngrok@5.0.0-beta.2": true,
+    "smile-identity-core@3.2.1": true
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
