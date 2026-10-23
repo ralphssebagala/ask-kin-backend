@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+
+const contributionSchema = new mongoose.Schema({
+    campaign: { type: mongoose.Schema.Types.ObjectId, ref: 'Campaign', required: true },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    amount: { type: Number, required: true },
+    message: { type: String, trim: true, maxlength: 250 },
+    createdAt: { type: Date, default: Date.now }
+});
+
+module.exports = mongoose.model('Contribution', contributionSchema);

@@ -1,0 +1,17 @@
+const mongoose = require('mongoose');
+
+const campaignSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  category: { type: String, required: true },
+  description: { type: String, required: true },
+  goal: { type: Number, required: true, default: 0 },
+  raised: { type: Number, default: 0 },
+  isOngoing: { type: Boolean, default: false },
+  durationDays: { type: Number, default: 30 },
+  image: { type: String },
+  creator: { type: String, default: 'Current User' },
+  createdAt: { type: Date, default: Date.now },
+  status: { type: String, default: 'Active' }
+});
+
+module.exports = mongoose.model('Campaign', campaignSchema);
